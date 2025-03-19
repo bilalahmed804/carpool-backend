@@ -4,8 +4,8 @@ const { Schema } = mongoose;
 const UserRideSchema = new Schema(
   {
     userID: { type: String, required: true },
-    from : {"ltd": Number, "long" : Number},
-    to : {"ltd": Number, "long" : Number},
+    from : {"latitude": Number, "longitude" : Number},
+    to : {"latitude": Number, "longitude" : Number},
   },
   { timestamps: true }
 );
